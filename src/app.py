@@ -10,7 +10,6 @@ import smtplib
 from email.message import EmailMessage
 from email.utils import make_msgid
 from dotenv import load_dotenv
-import os
 
 load_dotenv()  # loads .env variables
 
@@ -19,7 +18,7 @@ def send_alert_email(subject, to_email, overlay_img, plot_img, crowd_count, thre
     msg = EmailMessage()
     msg["Subject"] = subject
     msg["To"] = to_email
-    msg["From"] = "monitoringcrowd@gmail.com"
+    msg["From"] = os.environ.get("SMTP_USER")
     msg.set_content("This is an HTML email. Please view in HTML capable client.")
 
     overlay_cid = make_msgid(domain='xyz.com')
@@ -73,10 +72,12 @@ def send_alert_email(subject, to_email, overlay_img, plot_img, crowd_count, thre
         print(f"[ERROR] Failed to send email: {e}")
         return False
 
+
 try:
     get_cache = st.cache_resource  
 except AttributeError:
     get_cache = lambda func: st.cache(allow_output_mutation=True)
+
 
 @get_cache
 def get_model():
@@ -84,6 +85,7 @@ def get_model():
     MODEL_PATH = os.path.join(BASE_DIR, "csrnet_model", "csrnet_train.pth")
     model = load_csrnet_model(MODEL_PATH)
     return model
+
 
 model = get_model()
 
@@ -119,16 +121,22 @@ if uploaded_file is not None:
         plot_img = Image.open(buf_plot)
 
         if st.button("Send Alert Email"):
-            success = send_alert_email(
-                subject="🚨 Crowd Alert Notification",
-                to_email="sgayatri2405@gmail.com",  #change here with recepient mail id 
-                overlay_img=overlay,
-                plot_img=plot_img,
-                crowd_count=count,
-                threshold=CROWD_THRESHOLD,
-                uploaded_filename=uploaded_file.name
-            )
-            if success:
-                st.success("✅ Alert email sent with heatmap and plot!")
+            # Get recipient email from .env
+            recipient_email = os.environ.get("ALERT_RECIPIENT")
+
+            if not recipient_email:
+                st.error("❌ ALERT_RECIPIENT is not set in the .env file!")
             else:
-                st.error("❌ Failed to send alert email. Check logs.")
+                success = send_alert_email(
+                    subject="🚨 Crowd Alert Notification",
+                    to_email=recipient_email,
+                    overlay_img=overlay,
+                    plot_img=plot_img,
+                    crowd_count=count,
+                    threshold=CROWD_THRESHOLD,
+                    uploaded_filename=uploaded_file.name
+                )
+                if success:
+                    st.success("✅ Alert email sent with heatmap and plot!")
+                else:
+                    st.error("❌ Failed to send alert email. Check logs.")

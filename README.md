@@ -36,6 +36,8 @@ SMTP_USER=your_email@gmail.com
 
 SMTP_PASS=your_app_password
 
+ALERT_RECIPIENT=recipient_email@gmail.com
+
 
 ## Model Weights
 

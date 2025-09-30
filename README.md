@@ -15,7 +15,6 @@ Fully in-memory processing (no disk writes).
 <img width="1261" height="556" alt="image" src="https://github.com/user-attachments/assets/588520ea-91b0-4943-8743-625f80f34a85" />
 
 Installation
-git clone https://github.com/rakshita0412/CrowdMonitoringApp.git
 cd CrowdMonitoringApp
 pip install -r requirements.txt
 streamlit run src/app.py

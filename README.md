@@ -21,8 +21,11 @@ Fully in-memory processing (no disk writes).
 ## INSTALLATIONS 
 
 git clone https://github.com/sgyatri/infosis-crowdmonitoring.git
+
 cd infosis-crowdmonitoring
+
 pip install -r requirements.txt
+
 streamlit run src/app.py
 
 ## ENVIRONMENT VARIABLES 
@@ -30,6 +33,7 @@ streamlit run src/app.py
 Create a .env file in the root folder with your Gmail credentials:
 
 SMTP_USER=your_email@gmail.com
+
 SMTP_PASS=your_app_password
 
 

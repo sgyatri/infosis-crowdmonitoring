@@ -9,6 +9,11 @@ from inference import load_csrnet_model, get_count_and_heatmap
 import smtplib
 from email.message import EmailMessage
 from email.utils import make_msgid
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # loads .env variables
+
 
 def send_alert_email(subject, to_email, overlay_img, plot_img, crowd_count, threshold, uploaded_filename):
     msg = EmailMessage()
@@ -53,8 +58,8 @@ def send_alert_email(subject, to_email, overlay_img, plot_img, crowd_count, thre
                                      maintype='image', subtype='png',
                                      cid=plot_cid)
 
-    user = "monitoringcrowd@gmail.com"
-    password = "nbis rmjo ocgb agsp"
+    user = os.environ.get("SMTP_USER")
+    password = os.environ.get("SMTP_PASS")
 
     try:
         server = smtplib.SMTP("smtp.gmail.com", 587)
@@ -116,7 +121,7 @@ if uploaded_file is not None:
         if st.button("Send Alert Email"):
             success = send_alert_email(
                 subject="🚨 Crowd Alert Notification",
-                to_email="rakshitavipperla@gmail.com",  #change here with recepient mail id 
+                to_email="sgayatri2405@gmail.com",  #change here with recepient mail id 
                 overlay_img=overlay,
                 plot_img=plot_img,
                 crowd_count=count,

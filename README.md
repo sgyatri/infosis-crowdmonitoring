@@ -11,12 +11,16 @@ Sends HTML email alerts with heatmap and comparison plots.
 Configurable crowd threshold for alerts.
 Fully in-memory processing (no disk writes).
 
+![WhatsApp Image 2026-01-10 at 10 48 58 AM](https://github.com/user-attachments/assets/6eebd836-70f7![WhatsApp Image 2026-01-10 at 10 51 43 AM](https://github.com/user-attachments/assets/f22d3daf-0a77-4c11-b749-cc7a0042df08)
+-4133-8241-f4b12c816d91)
+![WhatsApp Image 2026-01-10 at 10 51 59 AM](https://github.com/user-attachments/assets/eeaf3bdb-70a7-43da-95cd-27ff78125165)
 
+![WhatsApp Image 2026-01-10 at 10 52 20 AM](https://github.com/user-attachments/assets/be622335-13a1-49e5-bfae-f5d7d86e7632)
 
-<img width="1899" height="926" alt="image" src="https://github.com/user-attachments/assets/79df2df6-fb4d-4817-ae98-2f158de74a8c" />
-<img width="1889" height="883" alt="image" src="https://github.com/user-attachments/assets/882282bd-cc89-4263-a13c-75581c2d4f83" />
-<img width="1533" height="781" alt="image" src="https://github.com/user-attachments/assets/c708c4cf-83a7-4770-a6b6-b45209f49b91" />
-<img width="1574" height="663" alt="image" src="https://github.com/user-attachments/assets/8151f36b-6ba3-47f8-a137-c1be572c1410" />
+![WhatsApp Image 2026-01-10 at 10 54 39 AM](https://github.com/user-attachments/assets/01e5a122-4013-4024-a9f8-cb1a8226dc61)
+![WhatsApp Image 2026-01-10 at 11 11 08 AM](https://github.com/user-attachments/assets/7f5c0d39-f95b-40c6-9a35-ff170aa5459f)
+![WhatsApp Image 2026-01-10 at 11 11 29 AM](https://github.com/user-attachments/assets/e48158e5-aca5-416a-9f49-dfb0834af130)
+
 
 ## INSTALLATIONS 
 

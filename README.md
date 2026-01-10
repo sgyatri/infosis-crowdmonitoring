@@ -10,16 +10,17 @@ Heatmap overlay showing crowd density on the image.
 Sends HTML email alerts with heatmap and comparison plots.
 Configurable crowd threshold for alerts.
 Fully in-memory processing (no disk writes).
+![WhatsApp Image 2026-01-10 at 10 48 58 AM](https://github.com/user-attachments/assets/efbce6b5-7a6f-422c-a148-cd4d5b5d0ee0)
+![WhatsApp Image 2026-01-10 at 11 21 50 AM](https://github.com/user-attachments/assets/b551fa87-23d9-4a37-8eae-a721ba2ddb14)
+![WhatsApp Image 2026-01-10 at 11 22 07 AM](https://github.com/user-attachments/assets/6b6b132d-3242-43f6-b1ea-04d0ca62c7d1)
+![WhatsApp Image 2026-01-10 at 10 51 43 AM](https://github.com/user-attachments/assets/13c43501-5678-4a98-8133-f7912502aa98)
+![WhatsApp Image 2026-01-10 at 10 51 59 AM](https://github.com/user-attachments/assets/328a06da-e738-4d2d-8cc3-c0090c13b02e)
+![WhatsApp Image 2026-01-10 at 10 52 20 AM](https://github.com/user-attachments/assets/438379cc-013a-4659-949c-18183434d62e)
+![WhatsApp Image 2026-01-10 at 11 16 10 AM](https://github.com/user-attachments/assets/a1fa70ff-99ad-427d-b051-380314935d81)
+![WhatsApp Image 2026-01-10 at 10 54 39 AM](https://github.com/user-attachments/assets/fd050962-7089-4bd2-99e4-1fbf078ba5e0)
 
-![WhatsApp Image 2026-01-10 at 10 48 58 AM](https://github.com/user-attachments/assets/6eebd836-70f7![WhatsApp Image 2026-01-10 at 10 51 43 AM](https://github.com/user-attachments/assets/f22d3daf-0a77-4c11-b749-cc7a0042df08)
--4133-8241-f4b12c816d91)
-![WhatsApp Image 2026-01-10 at 10 51 59 AM](https://github.com/user-attachments/assets/eeaf3bdb-70a7-43da-95cd-27ff78125165)
 
-![WhatsApp Image 2026-01-10 at 10 52 20 AM](https://github.com/user-attachments/assets/be622335-13a1-49e5-bfae-f5d7d86e7632)
 
-![WhatsApp Image 2026-01-10 at 10 54 39 AM](https://github.com/user-attachments/assets/01e5a122-4013-4024-a9f8-cb1a8226dc61)
-![WhatsApp Image 2026-01-10 at 11 11 08 AM](https://github.com/user-attachments/assets/7f5c0d39-f95b-40c6-9a35-ff170aa5459f)
-![WhatsApp Image 2026-01-10 at 11 11 29 AM](https://github.com/user-attachments/assets/e48158e5-aca5-416a-9f49-dfb0834af130)
 
 
 ## INSTALLATIONS 
